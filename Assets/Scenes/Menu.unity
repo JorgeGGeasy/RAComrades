@@ -600,9 +600,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: ToyStory
+  mTrackableName: PixarTOYSTORY
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Practica2.xml
+  mDataSetPath: Vuforia/RVComrades.xml
   mAspectRatio: 1.166287
   mImageTargetType: 0
   mWidth: 1
@@ -654,8 +654,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 266567738}
   mHiddenRoot: {fileID: 0}
-  mTargetName: ToyStory
-  mDatasetName: Vuforia/Practica2.xml
+  mTargetName: PixarTOYSTORY
+  mDatasetName: Vuforia/RVComrades.xml
   mCastedBehaviour: {fileID: 266567738}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -3450,13 +3450,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: BetisFour
+  mTrackableName: Joker
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Practica2.xml
-  mAspectRatio: 1.5
+  mDataSetPath: Vuforia/RVComrades.xml
+  mAspectRatio: 1.426758
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1.5
+  mHeight: 1.426758
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3492,8 +3492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1926905647}
   mHiddenRoot: {fileID: 0}
-  mTargetName: BetisFour
-  mDatasetName: Vuforia/Practica2.xml
+  mTargetName: Joker
+  mDatasetName: Vuforia/RVComrades.xml
   mCastedBehaviour: {fileID: 1926905647}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}

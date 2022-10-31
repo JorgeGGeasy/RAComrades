@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
-  <Tracking>
-    <ImageTarget name="Calabacita" size="1.000000 0.778098" />
-    <ImageTarget name="BetisFour" size="1.000000 1.500000" />
-    <ImageTarget name="Betis" size="1.000000 2.167196" />
-    <ImageTarget name="ToyStory" size="1.000000 1.166287" />
-  </Tracking>
-</QCARConfig>

@@ -4,10 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
-public class controlador : MonoBehaviour
+public class MenuController : MonoBehaviour
 {
-    private GameObject video;
-    private VideoPlayer videoControlador;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,7 +54,6 @@ public class controlador : MonoBehaviour
     }
     // Acaba controlador del menu
 
-    // Empieza controlador del video
     public void Volver()
     {
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);

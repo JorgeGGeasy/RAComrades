@@ -7,19 +7,19 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: 066f1be16df625e49acd1c85df9d5571
+  - enabled: 1
+    path: Assets/Scenes/EscenasGenerales/Video.unity
+    guid: 4341d6fca8aee064da9adb0f3a59e531
+  - enabled: 1
+    path: Assets/Scenes/EscenasGenerales/Controles.unity
+    guid: 41b96634dfd9bb145aeffb12f1d17df5
   - enabled: 1
     path: Assets/Scenes/TarjetaCoche/Coche.unity
     guid: c455d4f8a73c39146807de50eca8eeec
   - enabled: 1
     path: Assets/Scenes/TarjetaCoche/Reparar.unity
     guid: 511ca794a45f6834e9c2df285f70aa02
-  - enabled: 1
-    path: Assets/Scenes/EscenasGenerales/Controles.unity
-    guid: 41b96634dfd9bb145aeffb12f1d17df5
-  - enabled: 1
-    path: Assets/Scenes/EscenasGenerales/Video.unity
-    guid: 4341d6fca8aee064da9adb0f3a59e531
   - enabled: 1
     path: Assets/Scenes/TarjetaManual/Manual.unity
     guid: 546f3782856d65d46baf958287d64c8b
