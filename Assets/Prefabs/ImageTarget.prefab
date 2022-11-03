@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 2928162461331198949}
   - component: {fileID: 2928162461331198938}
   - component: {fileID: 2928162461331198939}
-  - component: {fileID: 2928162461331198936}
+  - component: {fileID: 5020906536016376013}
   m_Layer: 0
   m_Name: ImagenManual
   m_TagString: Untagged
@@ -185,7 +185,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ab367f351a5447442a51694da5195fa6, type: 2}
+  - {fileID: 2100000, guid: 541c67ab33f890445a75dc27dd11c681, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -221,7 +221,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2928162461331198936
+--- !u!114 &5020906536016376013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,16 +230,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2928162461331198943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d0966a35599dc748bc93c3d36d01798, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ac8fa99a1833224d894fa3d68fcdd0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagenes:
-  - {fileID: 21300000, guid: e0dbcbc15526ede459cf21c2ffeb613a, type: 3}
-  - {fileID: 21300000, guid: 4386174f2abf2a64590ab81b6d03a6f6, type: 3}
-  - {fileID: 21300000, guid: 899ba4630c4e1094fa0f797ec48de5a5, type: 3}
-  - {fileID: 21300000, guid: 7b828d5f6bd7816489e895284c424baf, type: 3}
-  - {fileID: 21300000, guid: fbd4d060ca6389b479330977f0841363, type: 3}
-  - {fileID: 21300000, guid: 44dfc7aee4548bc4fb139554f35fe730, type: 3}
+  imagenes: []
   btn_avanzar: {fileID: 2928162461866774470}
   btn_retroceder: {fileID: 2928162461005223072}
 --- !u!1 &2928162461430596178
@@ -254,8 +248,8 @@ GameObject:
   - component: {fileID: 2928162461430596185}
   - component: {fileID: 2928162461430596190}
   - component: {fileID: 2928162461430596191}
-  - component: {fileID: 2928162461430596188}
   - component: {fileID: 2928162461430596197}
+  - component: {fileID: 3120548856387918104}
   m_Layer: 0
   m_Name: Manual
   m_TagString: Untagged
@@ -313,7 +307,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 34c8051c5984ebb4e985297a4459e2b8, type: 2}
+  - {fileID: 2100000, guid: 28e928801b83e774db154b2a3a354ffc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -348,20 +342,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.05, y: 3, z: 1.05}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2928162461430596188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2928162461430596178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 277717f24bc884d4d929a82f4fadd5ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotSpeed: 0.4
-  btn_resetear: {fileID: 0}
 --- !u!222 &2928162461430596197
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -370,6 +350,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2928162461430596178}
   m_CullTransparentMesh: 1
+--- !u!114 &3120548856387918104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928162461430596178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4e37d828b15d74f81b0b0770672000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 0.4
+  btn_resetear: {fileID: 0}
 --- !u!1 &2928162461435013620
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,13 +907,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Pixar-TOYSTORY
+  mTrackableName: RVCom3
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/VR-GTI-Practicas.xml
-  mAspectRatio: 1.166287
+  mDataSetPath: Vuforia/RVComrades.xml
+  mAspectRatio: 1.480406
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1.166287
+  mHeight: 1.480406
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -983,8 +977,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2928162462502893979}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Pixar-TOYSTORY
-  mDatasetName: Vuforia/VR-GTI-Practicas.xml
+  mTargetName: RVCom3
+  mDatasetName: Vuforia/RVComrades.xml
   mCastedBehaviour: {fileID: 2928162462502893979}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
