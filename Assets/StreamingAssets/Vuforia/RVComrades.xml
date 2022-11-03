@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="RVCom3" size="1.000000 1.480406" />
+    <ImageTarget name="RVCom2" size="1.000000 1.480406" />
+    <ImageTarget name="RVCom1" size="1.000000 1.480406" />
     <ImageTarget name="Joker" size="1.000000 1.426758" />
     <ImageTarget name="PixarTOYSTORY" size="1.000000 1.166287" />
   </Tracking>
