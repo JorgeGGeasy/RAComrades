@@ -5,11 +5,8 @@ using UnityEngine.UI;
 using Vuforia;
 using TMPro;
 
-public class imagen : MonoBehaviour
+public class deteccion_luz : MonoBehaviour
 {
-
-    public TextMeshProUGUI  textoSiHayLuz;
-
     #region PRIVATE_MEMBERS
 
 #if UNITY_EDITOR
@@ -71,9 +68,9 @@ public class imagen : MonoBehaviour
             
 
             if(isTexturaConLuz(texture)){
-                textoSiHayLuz.text = "HAY LUZ";
+                Debug.Log("Hay Luz");
             }else{
-                textoSiHayLuz.text = "NO HAY LUZ";
+                Debug.Log("No hay Luz");
             }   
             
         }
@@ -87,6 +84,8 @@ public class imagen : MonoBehaviour
     ///
     bool isTexturaConLuz(Texture2D tex){
 
+
+       
         // obtener color medio
         Color colorMedio = averageColor(tex);
 
@@ -95,12 +94,17 @@ public class imagen : MonoBehaviour
         float H, S, V; // datos normalizados de 0 a 1, H va de 0 a 360 y la S y la V de 0 a 100
 
         Color.RGBToHSV(colorMedio, out H, out S, out V);
-        
-        Debug.Log ("H >> "+ H) ;
-        Debug.Log ("S >> "+ S) ;
-        Debug.Log ("V >> "+ V) ;
 
-        return V>=0.3;
+        Debug.Log("Entro en texturaConLuz y" + " H >> " + H + " S >> " + S + " V >> " + V);
+
+        if (V >= 0.3)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
 
     }
 
