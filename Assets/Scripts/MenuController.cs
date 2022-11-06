@@ -35,9 +35,9 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene("Reparar", LoadSceneMode.Single);
     }
 
-    public void IniciarInstrucciones()
+    public void IniciarControles()
     {
-        SceneManager.LoadScene("Instrucciones", LoadSceneMode.Single);
+        SceneManager.LoadScene("Controles", LoadSceneMode.Single);
     }
 
     public void IniciarVideo()
