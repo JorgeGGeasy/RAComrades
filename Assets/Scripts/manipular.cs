@@ -12,8 +12,10 @@ public class manipular : MonoBehaviour
 
     // atributos para resetear la poscion
     public Button btn_resetear;
-    private Vector3 escalaInicial = new Vector3(0.7883818f,0.008797552f,1.045946f);
-    private Vector3 posicionInicial =  new Vector3(0.0f,0.02f,0.0f);
+    //private Vector3 escalaInicial = new Vector3(0.7883818f,0.008797552f,1.045946f);
+    //private Vector3 posicionInicial =  new Vector3(0.0f,0.02f,0.0f);
+    private Vector3 escalaInicial;
+    private Vector3 posicionInicial;
     private Vector3 angulosInicial =  Vector3.zero;
 
     void resetear_posicion_manual(){
@@ -24,7 +26,9 @@ public class manipular : MonoBehaviour
     }
 
     void Start(){
-        
+
+        escalaInicial = gameObject.transform.localScale;
+        posicionInicial = gameObject.transform.localPosition;
         // inicializar la posicion original
         btn_resetear.onClick.AddListener(resetear_posicion_manual);
     }

@@ -6,6 +6,8 @@ using UnityEngine.Video;
 
 public class MenuController : MonoBehaviour
 {
+
+    public GameObject particulas;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,5 +59,10 @@ public class MenuController : MonoBehaviour
     public void Volver()
     {
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+    }
+
+    public void IniciarParticulas()
+    {
+        particulas.SetActive(true);
     }
 }

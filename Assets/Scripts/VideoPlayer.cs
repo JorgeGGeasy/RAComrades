@@ -6,7 +6,7 @@ public class VideoPlayer : MonoBehaviour
 {
     private UnityEngine.Video.VideoPlayer v;
     public GameObject planoVideo;
-    private bool videoIniciado = true;
+    private bool videoIniciado = false;
     // Start is called before the first frame update
     void Start()
     {
