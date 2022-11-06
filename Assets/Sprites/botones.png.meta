@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e10cf620747cd74aaa42bb2c5812765
-      internalID: -1983238805
+      spriteID: bfc8c7cdb869bd44bb755ac71013b71a
+      internalID: 1571690130
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36fa96af2022d3947888cccb77e3be2a
-      internalID: 188096889
+      spriteID: 64ecc7666c5ac5f4bb27cd01e246999e
+      internalID: 198758745
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ced00471215024043b56afce0f946fe3
-      internalID: 478241041
+      spriteID: 7fff1b4989a6efe4f99abea186b7258e
+      internalID: -1360506848
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 309fb5bb5698a8f46b39a943faf85415
-      internalID: -1298008621
+      spriteID: 46a54445a3a4dfc449b4e0ee233ed926
+      internalID: 434143976
       vertices: []
       indices: 
       edges: []
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee2b8b2e8f6991742b15fef23837f3b0
-      internalID: 355884759
+      spriteID: ae2fc2f29b8b4994aab70f93069beabc
+      internalID: -1463157807
       vertices: []
       indices: 
       edges: []
@@ -236,8 +236,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 269d355363a15e849b95b0037626eef2
-      internalID: -588318650
+      spriteID: 326e43d1d635cf349a2536fd93d853f4
+      internalID: 598479030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones_6
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 245
+        width: 118
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309e0f2d1928843468acc3fd57b2cae1
+      internalID: -761330259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 243
+        width: 118
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83ea283d8a654345927111938365401
+      internalID: -639898802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones_8
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 54
+        width: 118
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8838274fd3f23e4d92852c2c8d1f19e
+      internalID: -683777755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones_9
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 52
+        width: 118
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e92092ae77657f45b828f6c1bdd12d2
+      internalID: -1978022704
       vertices: []
       indices: 
       edges: []
@@ -245,7 +329,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 20141d23bcc4d9848aea8b5ba6a30279
+    spriteID: 1c591c22d53d4c74c9e8d2adb386248a
     internalID: 0
     vertices: []
     indices: 
@@ -253,12 +337,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      botones_4: 355884759
-      botones_1: 188096889
-      botones_0: -1983238805
-      botones_3: -1298008621
-      botones_2: 478241041
-      botones_5: -588318650
+      botones_4: -1463157807
+      botones_7: -639898802
+      botones_1: 198758745
+      botones_0: 1571690130
+      botones_9: -1978022704
+      botones_3: 434143976
+      botones_6: -761330259
+      botones_2: -1360506848
+      botones_5: 598479030
+      botones_8: -683777755
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
