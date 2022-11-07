@@ -29,10 +29,10 @@ PlayerSettings:
   m_SplashScreenBackgroundPortraitAspect: 1
   m_SplashScreenBackgroundLandscapeUvs:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: 0.40364584
+    y: 0.46018517
+    width: 0.1734375
+    height: 0.15462965
   m_SplashScreenBackgroundPortraitUvs:
     serializedVersion: 2
     x: 0

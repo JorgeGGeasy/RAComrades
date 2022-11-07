@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "9YHNW18A18000558",
     "m_SelectedPackage": {
-        "deviceId": "860fc455",
-        "name": "com.RVComrades.RAComrades",
-        "processId": 25283,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -61,6 +61,18 @@
             "name": "com.RVComrades.RAComrades",
             "processId": 25283,
             "exited": false
+        },
+        {
+            "deviceId": "9YHNW18A18000558",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 6759,
+            "exited": true
+        },
+        {
+            "deviceId": "9YHNW18A18000558",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 9397,
+            "exited": true
         }
     ],
     "m_Tags": {
@@ -114,7 +126,7 @@
         "Behavior": 0
     },
     "m_FilterOptions": {
-        "m_Filter": "h",
+        "m_Filter": "",
         "m_UseRegularExpressions": false,
         "m_MatchCase": false
     },
