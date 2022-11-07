@@ -1,41 +1,65 @@
 {
     "m_SelectedDeviceId": "9YHNW18A18000558",
     "m_SelectedPackage": {
-        "deviceId": "9YHNW18A18000558",
+        "deviceId": "860fc455",
         "name": "com.RVComrades.RAComrades",
-        "processId": 17405,
+        "processId": 25283,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
-            "deviceId": "9YHNW18A18000558",
-            "name": "com.RVComrades.RAComrades2",
-            "processId": 1219,
-            "exited": true
-        },
-        {
-            "deviceId": "9YHNW18A18000558",
-            "name": "com.RVComrades.RAComrades2",
-            "processId": 9104,
-            "exited": true
-        },
-        {
-            "deviceId": "9YHNW18A18000558",
-            "name": "com.whatsapp",
-            "processId": 23309,
-            "exited": true
-        },
-        {
-            "deviceId": "9YHNW18A18000558",
-            "name": "com.RVComrades.RAComrades2",
-            "processId": 15520,
-            "exited": true
-        },
-        {
-            "deviceId": "9YHNW18A18000558",
+            "deviceId": "860fc455",
             "name": "com.RVComrades.RAComrades",
-            "processId": 17405,
+            "processId": 11862,
+            "exited": true
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 16900,
+            "exited": true
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 18207,
+            "exited": true
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 18934,
+            "exited": true
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.miui.home",
+            "processId": 19359,
+            "exited": false
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 22670,
+            "exited": false
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 23475,
+            "exited": false
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 24320,
+            "exited": false
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 25283,
             "exited": false
         }
     ],
@@ -90,7 +114,7 @@
         "Behavior": 0
     },
     "m_FilterOptions": {
-        "m_Filter": "",
+        "m_Filter": "h",
         "m_UseRegularExpressions": false,
         "m_MatchCase": false
     },

@@ -261,6 +261,117 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08e5ed44be350114e9e8dcda99f008c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &459079822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2928162462502893983, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
+  m_PrefabInstance: {fileID: 2092768734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &459079824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2928162462502893979, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
+  m_PrefabInstance: {fileID: 2092768734}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459079822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &459079826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459079822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 459079824}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: RVCom2
+  mDatasetName: Vuforia/RVComrades.xml
+  mCastedBehaviour: {fileID: 459079824}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &459079829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459079822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 459079824}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: RVCom2
+  mDatasetName: Vuforia/RVComrades.xml
+  mCastedBehaviour: {fileID: 459079824}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &459079830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459079822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 459079824}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: RVCom2
+  mDatasetName: Vuforia/RVComrades.xml
+  mCastedBehaviour: {fileID: 459079824}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &459079833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459079822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 459079824}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: RVCom2
+  mDatasetName: Vuforia/RVComrades.xml
+  mCastedBehaviour: {fileID: 459079824}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &459079836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459079822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 459079824}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: RVCom2
+  mDatasetName: Vuforia/RVComrades.xml
+  mCastedBehaviour: {fileID: 459079824}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &722054167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,9 +1157,17 @@ PrefabInstance:
       value: ImageTarget
       objectReference: {fileID: 0}
     - target: {fileID: 3120548856387918104, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120548856387918104, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
       propertyPath: btn_resetear
       value: 
       objectReference: {fileID: 1180628130}
+    - target: {fileID: 5020906536016376013, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5020906536016376013, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
       propertyPath: imagenes.Array.size
       value: 8
@@ -1085,9 +1204,5 @@ PrefabInstance:
       propertyPath: imagenes.Array.data[7]
       value: 
       objectReference: {fileID: 21300000, guid: c8a7955688a2b6749bd14239bfab35d5, type: 3}
-    m_RemovedComponents:
-    - {fileID: 2928162461430596188, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
-    - {fileID: 2928162461331198936, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
-    - {fileID: 2928162462502893978, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
-    - {fileID: 5020906536016376013, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
