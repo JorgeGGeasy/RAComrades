@@ -256,8 +256,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Salir
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
+  m_sharedMaterial: {fileID: -187262133990603852, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -455,7 +455,6 @@ GameObject:
   - component: {fileID: 266567738}
   - component: {fileID: 266567737}
   - component: {fileID: 266567740}
-  - component: {fileID: 266567741}
   m_Layer: 0
   m_Name: TarjetaCoche
   m_TagString: Untagged
@@ -532,7 +531,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 266567741}
+  mPreview: {fileID: 266567740}
 --- !u!4 &266567739
 Transform:
   m_ObjectHideFlags: 0
@@ -551,19 +550,6 @@ Transform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &266567740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266567735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282d498fb4143ac4db67e21ac3181acb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particulas: {fileID: 2016051750}
---- !u!114 &266567741
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -644,8 +630,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
+  m_sharedMaterial: {fileID: -187262133990603852, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -823,6 +809,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &422189497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4419274417299770058, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+  m_PrefabInstance: {fileID: 4419274417183773555}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &422561331
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,9 +898,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1926905645}
-        m_TargetAssemblyTypeName: controlador, Assembly-CSharp
-        m_MethodName: IniciarManual
+      - m_Target: {fileID: 973358692}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: Volver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1123,8 +1114,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Controlar el coche
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
+  m_sharedMaterial: {fileID: -187262133990603852, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1358,8 +1349,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Controles
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
+  m_sharedMaterial: {fileID: -187262133990603852, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1587,8 +1578,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Manual
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
+  m_sharedMaterial: {fileID: -187262133990603852, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1724,8 +1715,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
+  m_sharedMaterial: {fileID: -187262133990603852, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1981,8 +1972,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266567740}
-        m_TargetAssemblyTypeName: controlador, Assembly-CSharp
+      - m_Target: {fileID: 973358692}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: IniciarCoche
         m_Mode: 1
         m_Arguments:
@@ -2115,8 +2106,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1926905645}
-        m_TargetAssemblyTypeName: controlador, Assembly-CSharp
+      - m_Target: {fileID: 973358692}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: IniciarVideo
         m_Mode: 1
         m_Arguments:
@@ -2249,8 +2240,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266567740}
-        m_TargetAssemblyTypeName: controlador, Assembly-CSharp
+      - m_Target: {fileID: 973358692}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: IniciarVideo
         m_Mode: 1
         m_Arguments:
@@ -2383,7 +2374,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1926905645}
+      - m_Target: {fileID: 973358692}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: IniciarControles
         m_Mode: 1
@@ -2433,6 +2424,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951596252}
   m_CullTransparentMesh: 1
+--- !u!1 &973358690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 973358693}
+  - component: {fileID: 973358692}
+  - component: {fileID: 973358694}
+  m_Layer: 0
+  m_Name: Controlador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &973358692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973358690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282d498fb4143ac4db67e21ac3181acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particulas: {fileID: 2016051750}
+--- !u!4 &973358693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973358690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &973358694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973358690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0084d26b314a6684f94f84683f3276d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasTarjetaCoche: {fileID: 493838581}
+  canvasTarjetaManual: {fileID: 381612635}
+  buscaTarjeta: {fileID: 422189497}
 --- !u!1 &1038852241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,7 +2669,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266567740}
+      - m_Target: {fileID: 973358692}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: IniciarControles
         m_Mode: 1
@@ -2751,9 +2803,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266567740}
-        m_TargetAssemblyTypeName: controlador, Assembly-CSharp
-        m_MethodName: SalirDelJuego
+      - m_Target: {fileID: 973358692}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: Volver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3095,9 +3147,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266567740}
+      - m_Target: {fileID: 973358692}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: IniciarParticulas
+        m_MethodName: IniciarReparar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3205,8 +3257,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Controles
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
+  m_sharedMaterial: {fileID: -187262133990603852, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3464,9 +3516,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1926905645}
-        m_TargetAssemblyTypeName: controlador, Assembly-CSharp
-        m_MethodName: SalirDelJuego
+      - m_Target: {fileID: 973358692}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: Volver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3525,7 +3577,6 @@ GameObject:
   - component: {fileID: 1926905648}
   - component: {fileID: 1926905647}
   - component: {fileID: 1926905646}
-  - component: {fileID: 1926905645}
   - component: {fileID: 1926905649}
   m_Layer: 0
   m_Name: TarjetaManual
@@ -3534,19 +3585,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1926905645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926905643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282d498fb4143ac4db67e21ac3181acb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particulas: {fileID: 0}
 --- !u!114 &1926905646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3713,8 +3751,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Salir
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
+  m_sharedMaterial: {fileID: -187262133990603852, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3853,7 +3891,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Reparar el coche
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3917,7 +3955,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2071619484
@@ -4028,6 +4066,107 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122419295}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &4419274417183773555
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4419274417299770058, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_Name
+      value: Busca tarjeta
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770062, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419274417299770063, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 230119910}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 328b175180fa4af4684c7768f7c1ca0d, type: 3}
 --- !u!1001 &9209845949530656167
 PrefabInstance:
   m_ObjectHideFlags: 0

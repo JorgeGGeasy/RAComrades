@@ -1,23 +1,41 @@
 {
-    "m_SelectedDeviceId": "860fc455",
+    "m_SelectedDeviceId": "9YHNW18A18000558",
     "m_SelectedPackage": {
-        "deviceId": "860fc455",
-        "name": "com.RVComrades.RAComrades2",
-        "processId": 11977,
+        "deviceId": "9YHNW18A18000558",
+        "name": "com.RVComrades.RAComrades",
+        "processId": 17405,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
-            "deviceId": "860fc455",
+            "deviceId": "9YHNW18A18000558",
             "name": "com.RVComrades.RAComrades2",
-            "processId": 5703,
-            "exited": false
+            "processId": 1219,
+            "exited": true
         },
         {
-            "deviceId": "860fc455",
+            "deviceId": "9YHNW18A18000558",
             "name": "com.RVComrades.RAComrades2",
-            "processId": 11977,
+            "processId": 9104,
+            "exited": true
+        },
+        {
+            "deviceId": "9YHNW18A18000558",
+            "name": "com.whatsapp",
+            "processId": 23309,
+            "exited": true
+        },
+        {
+            "deviceId": "9YHNW18A18000558",
+            "name": "com.RVComrades.RAComrades2",
+            "processId": 15520,
+            "exited": true
+        },
+        {
+            "deviceId": "9YHNW18A18000558",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 17405,
             "exited": false
         }
     ],
