@@ -16,6 +16,8 @@ public class deteccion_luz : MonoBehaviour
 #endif
     private bool mFormatRegistered = false;
     private Texture2D texture;
+    public float period = 0.0f;
+    private float timeInterval = 1.0f; //seconds
 
     private int width;
     private int height;
@@ -50,32 +52,31 @@ public class deteccion_luz : MonoBehaviour
     /// 
     void OnVuforiaUpdated()
     {
-        if (mFormatRegistered)
+        if (period > timeInterval)
         {
-            texture = new Texture2D(width, height, TextureFormat.RGB24, false);
-            Vuforia.Image image = VuforiaBehaviour.Instance.CameraDevice.GetCameraImage(mPixelFormat);
-            image.CopyBufferToTexture(texture);
-            texture.Apply();
+            // hay que hacer el proceso de pillar una imagen mas lento para que no se sature 
+            period = 0;
 
-
-            Debug.Log(
-                "\nImage Format: " + image.PixelFormat +
-                "\nImage Size: " + image.Width + " x " + image.Height +
-                "\nBuffer Size: " + image.BufferWidth + " x " + image.BufferHeight +
-                "\nImage Stride: " + image.Stride + "\n"
-                
-            );
-            
-
-            if(isTexturaConLuz(texture)){
-                Debug.Log("Hay Luz");
+            if (mFormatRegistered)
+            {
+                Debug.Log("Va a pillar imagen");
+                texture = new Texture2D(width, height, TextureFormat.RGB24, false);
+                Vuforia.Image image = VuforiaBehaviour.Instance.CameraDevice.GetCameraImage(mPixelFormat);
+                image.CopyBufferToTexture(texture);
+                texture.Apply();
+                if(isTexturaConLuz(texture)){
+                    Debug.Log("Hay Luz");
+                }else{
+                    Debug.Log("No hay Luz");
+                } 
             }else{
-                Debug.Log("No hay Luz");
-            }   
-            
+                Debug.Log("No pilla imagen");
+            }
         }
+        period += UnityEngine.Time.deltaTime;
     }
 
+    
 
     ///
     /// Dada una textura obtiene el color medio y
