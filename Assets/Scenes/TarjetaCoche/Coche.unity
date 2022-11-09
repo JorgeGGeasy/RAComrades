@@ -2385,6 +2385,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6427572141746297652, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6452515952182884854, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
@@ -2595,7 +2599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7500986211361240630, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7500986211361240630, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4797,7 +4801,7 @@ MonoBehaviour:
   period: 0
   luzCoche: {fileID: 671323159}
   solEscena: {fileID: 1453036979}
-  umbralDeteccionLuz: 0.4
+  umbralDeteccionLuz: 0.5
 --- !u!64 &2092359196
 MeshCollider:
   m_ObjectHideFlags: 0
