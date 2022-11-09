@@ -17,8 +17,6 @@ public class BuscaTargets : MonoBehaviour
                 buscaTarjeta.SetActive(false);
             }
 
-            Debug.Log("Activa");
-
         }
         else
         {
@@ -26,8 +24,6 @@ public class BuscaTargets : MonoBehaviour
             {
                 buscaTarjeta.SetActive(true);
             }
-
-            Debug.Log("Desactivada");
         }
     }
 }

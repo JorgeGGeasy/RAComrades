@@ -2590,6 +2590,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7500986211361240630, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
+      propertyPath: m_Name
+      value: faro
+      objectReference: {fileID: 0}
+    - target: {fileID: 7500986211361240630, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7500986211361240630, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
@@ -3019,6 +3027,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d790174c472ac478e5996f09bb97fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &671323159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7500986211361240630, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
+  m_PrefabInstance: {fileID: 671323156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &671323160
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4719,6 +4732,7 @@ GameObject:
   - component: {fileID: 2076375115}
   - component: {fileID: 2076375114}
   - component: {fileID: 2076375113}
+  - component: {fileID: 2076375116}
   m_Layer: 0
   m_Name: Controlador
   m_TagString: Untagged
@@ -4768,6 +4782,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076375116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076375112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e5ed44be350114e9e8dcda99f008c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  period: 0
+  luzCoche: {fileID: 671323159}
+  solEscena: {fileID: 1453036979}
+  umbralDeteccionLuz: 0.4
 --- !u!64 &2092359196
 MeshCollider:
   m_ObjectHideFlags: 0

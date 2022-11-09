@@ -137,7 +137,6 @@ GameObject:
   - component: {fileID: 341258469}
   - component: {fileID: 341258468}
   - component: {fileID: 341258473}
-  - component: {fileID: 341258474}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: MainCamera
@@ -249,19 +248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0feecc8024806447bf7a8df509cf4b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &341258474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341258467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08e5ed44be350114e9e8dcda99f008c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  period: 0
 --- !u!1 &459079822 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2928162462502893983, guid: 68154ce19e47c274a869f3106e5ba11f, type: 3}
@@ -284,6 +270,25 @@ Transform:
   m_PrefabInstance: {fileID: 2092768734}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &459079827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459079822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 459079824}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: RVCom2
+  mDatasetName: Vuforia/RVComrades.xml
+  mCastedBehaviour: {fileID: 459079824}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &459079828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -491,7 +496,7 @@ RectTransform:
   - {fileID: 1575167257}
   - {fileID: 1180628129}
   m_Father: {fileID: 459079825}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

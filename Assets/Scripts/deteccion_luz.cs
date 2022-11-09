@@ -21,6 +21,13 @@ public class deteccion_luz : MonoBehaviour
 
     private int width;
     private int height;
+
+    public GameObject luzCoche;
+    public GameObject solEscena;
+
+    [Range(0.0f, 1.0f)]
+    public float umbralDeteccionLuz;
+
     #endregion // PRIVATE_MEMBERS
 
     #region MONOBEHAVIOUR_METHODS
@@ -64,11 +71,10 @@ public class deteccion_luz : MonoBehaviour
                 Vuforia.Image image = VuforiaBehaviour.Instance.CameraDevice.GetCameraImage(mPixelFormat);
                 image.CopyBufferToTexture(texture);
                 texture.Apply();
-                if(isTexturaConLuz(texture)){
-                    Debug.Log("Hay Luz");
-                }else{
-                    Debug.Log("No hay Luz");
-                } 
+                if(luzCoche !=null){
+                    configurarLucesSegunLuzAmbiente(isTexturaConLuz(texture));
+                     
+                }
             }else{
                 Debug.Log("No pilla imagen");
             }
@@ -77,6 +83,10 @@ public class deteccion_luz : MonoBehaviour
     }
 
     
+    void configurarLucesSegunLuzAmbiente(bool hayLuz){
+        luzCoche.SetActive(!hayLuz); 
+        solEscena.SetActive(hayLuz); 
+    }
 
     ///
     /// Dada una textura obtiene el color medio y
@@ -98,7 +108,7 @@ public class deteccion_luz : MonoBehaviour
 
         Debug.Log("Entro en texturaConLuz y" + " H >> " + H + " S >> " + S + " V >> " + V);
 
-        if (V >= 0.3)
+        if (V >= umbralDeteccionLuz)
         {
             return true;
         }
