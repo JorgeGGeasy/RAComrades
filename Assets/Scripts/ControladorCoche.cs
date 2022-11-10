@@ -30,16 +30,20 @@ public class ControladorCoche : MonoBehaviour
     [SerializeField]
     private List<Rueda> ruedas;
 
-    private Rigidbody rb;
+    public Rigidbody rb;
     float frontal;
     float lateral;
 
     private Vector3 posicionInicial;
     private Quaternion rotacionInicial;
+
+    private float period;
+
+    public GameObject canvasTarjeta;
     // Start is called before the first frame update
     private void Start()
     {
-        
+        period = 0f;
     }
 
     private void Awake()
@@ -52,6 +56,19 @@ public class ControladorCoche : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (canvasTarjeta.GetComponent<Canvas>().enabled)
+        {
+            //Debug.Log("Hay canvas");
+            rb.useGravity = true;
+            rb.isKinematic = false;
+        }
+        else
+        {
+            //Debug.Log("No hay canvas");
+            rb.useGravity = false;
+            rb.isKinematic = true;
+        }
+
         frontal = CrossPlatformInputManager.VirtualAxisReference("Vertical").GetValue * aceleracionMaxima;
         lateral = CrossPlatformInputManager.VirtualAxisReference("Horizontal").GetValue * sensibilidadGiro;
 
@@ -61,7 +78,7 @@ public class ControladorCoche : MonoBehaviour
             Vector3 pos;
             rueda.collider.GetWorldPose(out pos, out rotacion);
             rueda.modelo.transform.position = pos;
-            rueda.modeloEje.transform.position = new Vector3(/*rueda.modeloEje.transform.position.x*/pos.x + 0.01203448f, pos.y, rueda.modeloEje.transform.position.z);
+            rueda.modeloEje.transform.position = new Vector3(pos.x, pos.y, pos.z);
             rueda.modelo.transform.rotation = rotacion;
         }
     }
@@ -84,7 +101,19 @@ public class ControladorCoche : MonoBehaviour
 
     public void ResetPos()
     {
+        rb.isKinematic = true;
         transform.localPosition = posicionInicial;
         transform.localRotation = rotacionInicial;
+        Debug.Log("Está cayendo");
+        rb.isKinematic = false;
+    }
+
+    public void ResetPosQuieta()
+    {
+        rb.isKinematic = true;
+        transform.localPosition = new Vector3(transform.localPosition.x, posicionInicial.y, transform.localPosition.z);
+        transform.localRotation = rotacionInicial;
+        Debug.Log("Está cayendo");
+        rb.isKinematic = false;
     }
 }

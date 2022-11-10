@@ -7,6 +7,7 @@ public class BuscaTargetsMenu : MonoBehaviour
     public GameObject canvasTarjetaCoche;
     public GameObject canvasTarjetaManual;
     public GameObject buscaTarjeta;
+
     // Update is called once per frame
     void Update()
     {
@@ -18,7 +19,6 @@ public class BuscaTargetsMenu : MonoBehaviour
             }
 
             Debug.Log("Activa");
-
         }
         else
         {
