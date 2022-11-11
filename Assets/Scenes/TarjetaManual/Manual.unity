@@ -307,6 +307,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 459079824}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &459079829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459079822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 459079824}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: RVCom2
+  mDatasetName: Vuforia/RVComrades.xml
+  mCastedBehaviour: {fileID: 459079824}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &722054167
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "114a6171",
         "name": "com.RVComrades.RAComrades",
-        "processId": 9271,
+        "processId": 11621,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -75,9 +75,15 @@
             "exited": true
         },
         {
+            "deviceId": "9YHNW18A18000558",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 19086,
+            "exited": true
+        },
+        {
             "deviceId": "114a6171",
             "name": "com.RVComrades.RAComrades",
-            "processId": 9271,
+            "processId": 11621,
             "exited": false
         }
     ],
