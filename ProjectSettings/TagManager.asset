@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - cube
+  - conectado
+  - objetoMovible
+  - utilidades
   layers:
   - Default
   - TransparentFX

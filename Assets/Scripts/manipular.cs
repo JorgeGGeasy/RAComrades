@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class manipular : MonoBehaviour
+public class Manipular : MonoBehaviour
 {
     public float rotSpeed = 0.4f;
     private float initialDistance;
