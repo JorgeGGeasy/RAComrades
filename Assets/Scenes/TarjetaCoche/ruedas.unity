@@ -352,12 +352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de099100151f2f4daaa7a67c523516d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pila: 0
-  pilaObjeto: {fileID: 943261795}
   rueda: 0
   ruedas: []
-  objetosNecesarios: 2
-  objetosConectados: 0
   materialSucio: {fileID: 2100000, guid: 64ce35ee8b2860841bf44b53e8e4e618, type: 2}
   materialMedioSucio: {fileID: 2100000, guid: ea095621e216a734b970ddaadd3eece2, type: 2}
   materialLimpio: {fileID: 2100000, guid: 968158d6b8205874dbd93968c77f8fd1, type: 2}
@@ -1083,6 +1079,7 @@ GameObject:
   - component: {fileID: 794360471}
   - component: {fileID: 794360470}
   - component: {fileID: 794360469}
+  - component: {fileID: 794360473}
   m_Layer: 0
   m_Name: Controlador
   m_TagString: utilidades
@@ -1172,6 +1169,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &794360473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794360468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab76b3d517ced94196e85848fa90515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baterias: 0
+  ruedas: 0
+  limpieza: 0
+  radio: 0
+  luces: 0
 --- !u!1001 &814937127
 PrefabInstance:
   m_ObjectHideFlags: 0
