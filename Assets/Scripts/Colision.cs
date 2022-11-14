@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Colision : MonoBehaviour
 {
-    public bool pila;
-    public GameObject pilaObjeto;
+    private GameManager gameManager;
+
     public bool rueda;
-    public GameObject ruedaObjeto;
-    public int objetosNecesarios;
-    public int objetosConectados;
+    public List<GameObject> ruedas;
     private Coroutine limpiar;
     private bool limpiando;
 
@@ -17,23 +15,26 @@ public class Colision : MonoBehaviour
     public Material materialMedioSucio;
     public Material materialLimpio;
     private int contador;
+    private int ruedasConectadas;
+
+    public float expForce, radius;
+
+    public void Start()
+    {
+        gameManager = GameManager.Instance;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "objetoMovible")
         {
-            Objeto objeto =  other.gameObject.GetComponent<Objeto>();
-            if (objeto.conectar())
+            Objeto propiedades =  other.gameObject.GetComponent<Objeto>();
+            if (propiedades.conectar())
             {
-                other.gameObject.tag = "conectado";
-                cocheListo(objeto.recibirNombre());
-                other.gameObject.GetComponent<Rigidbody>().useGravity = false;
-                other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-                other.gameObject.SetActive(false);
+                conectarAlCoche(other.gameObject, propiedades);
             }
-            else if (objeto.limpia())
+            else if (propiedades.limpia())
             {
-                Debug.Log("Buen dia");
                 limpiar = StartCoroutine(Limpiar());
             }
             
@@ -63,31 +64,75 @@ public class Colision : MonoBehaviour
             Objeto objeto = other.gameObject.GetComponent<Objeto>();
             if (objeto.limpia())
             {
-                Debug.Log("Buena tarde");
                 StopCoroutine(limpiar);
             }
         }
     }
 
-    public void cocheListo(string objeto)
+    public void conectarAlCoche(GameObject objeto, Objeto propiedades)
     {
-        if(objeto == "Pila" && pila != true)
+        if (propiedades.recibirNombre() == "Rueda" && rueda != true)
         {
-            pila = true;
-            pilaObjeto.SetActive(true);
-            objetosConectados++;
+            if (propiedades.ruedaCorrecta())
+            {
+                objeto.gameObject.tag = "conectado";
+                switch (ruedasConectadas)
+                {
+                    case 0:
+                        objeto.transform.position = transform.position;
+                        objeto.transform.position = new Vector3(objeto.transform.position.x, objeto.transform.position.y, 0.149f);
+                        break;
+                    case 1:
+                        objeto.transform.position = transform.position;
+                        objeto.transform.position = new Vector3(-0.438f, objeto.transform.position.y, objeto.transform.position.z);
+                        break;
+                    case 2:
+                        objeto.transform.position = transform.position;
+                        objeto.transform.position = new Vector3(objeto.transform.position.x, objeto.transform.position.y, -0.149f);
+                        break;
+                    default:
+                        print("Ya no se colocan ruedas");
+                        break;
+                }
+                ruedasConectadas++;
+            }
+            else
+            {
+                crearExplosion();
+            }
+            cocheListo();
+
+            
+            objeto.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            objeto.gameObject.GetComponent<Rigidbody>().isKinematic = true;
         }
-        else if (objeto == "Rueda" && rueda != true)
+    }
+
+    public void crearExplosion()
+    {
+        Debug.Log("Exploto");
+        ruedasConectadas = 0;
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+        foreach (Collider nearby in colliders)
+        {
+            Rigidbody rigg = nearby.GetComponent<Rigidbody>();
+
+            if (rigg != null)
+            {
+                rigg.isKinematic = false;
+                rigg.useGravity = true;
+                rigg.AddExplosionForce(expForce, transform.position, radius);
+                rigg.gameObject.tag = "objetoMovible";
+            }
+        }
+    }
+
+    public void cocheListo(){
+
+        if (ruedasConectadas >= 3)
         {
             rueda = true;
-            ruedaObjeto.SetActive(true);
-            objetosConectados++;
-        }
-
-        if(objetosConectados == objetosNecesarios)
-        {
-            Debug.Log("Conseguido");
-            //Aqui salta a la escena del coche
+            gameManager.ResolverRuedas();
         }
     }
 
@@ -101,6 +146,7 @@ public class Colision : MonoBehaviour
         {
             case 3:
                 GetComponent<Renderer>().material = materialLimpio;
+                gameManager.ResolverLimpieza();
                 break;
             case 2:
                 GetComponent<Renderer>().material = materialMedioSucio;

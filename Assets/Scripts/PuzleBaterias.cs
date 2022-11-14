@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PuzleBaterias : MonoBehaviour
 {
+    private GameManager gameManager;
+    
 
     private Color colorb1;
     private Color colorb2;
@@ -98,6 +100,7 @@ public class PuzleBaterias : MonoBehaviour
                     // desfreeze todo
                 }else if(result == 0){
                     // correcto
+                    gameManager.ResolverBaterias();
                     Debug.Log("BATERIA - COLORES IGUALES");
                 }
             }
@@ -143,6 +146,7 @@ public class PuzleBaterias : MonoBehaviour
     void Start()
     {
         pantallaResultado.color = Color.grey;
+        gameManager = GameManager.Instance;
     }
 
     // Update is called once per frame

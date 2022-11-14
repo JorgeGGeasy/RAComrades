@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "9YHNW18A18000558",
     "m_SelectedPackage": {
-        "deviceId": "860fc455",
+        "deviceId": "114a6171",
         "name": "com.RVComrades.RAComrades",
-        "processId": 5675,
+        "processId": 11621,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -63,21 +63,27 @@
             "exited": false
         },
         {
-            "deviceId": "860fc455",
+            "deviceId": "9YHNW18A18000558",
             "name": "com.RVComrades.RAComrades",
-            "processId": 23221,
-            "exited": false
+            "processId": 6759,
+            "exited": true
         },
         {
-            "deviceId": "860fc455",
+            "deviceId": "9YHNW18A18000558",
             "name": "com.RVComrades.RAComrades",
-            "processId": 30344,
-            "exited": false
+            "processId": 9397,
+            "exited": true
         },
         {
-            "deviceId": "860fc455",
+            "deviceId": "9YHNW18A18000558",
             "name": "com.RVComrades.RAComrades",
-            "processId": 5675,
+            "processId": 19086,
+            "exited": true
+        },
+        {
+            "deviceId": "114a6171",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 11621,
             "exited": false
         }
     ],
@@ -132,7 +138,7 @@
         "Behavior": 0
     },
     "m_FilterOptions": {
-        "m_Filter": "luz",
+        "m_Filter": "",
         "m_UseRegularExpressions": false,
         "m_MatchCase": false
     },

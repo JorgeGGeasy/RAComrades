@@ -26,6 +26,15 @@ public class Objeto : MonoBehaviour
         return false;
     }
 
+    public bool ruedaCorrecta()
+    {
+        if (objetoPuzle.ruedaCorrecta)
+        {
+            return true;
+        }
+        return false;
+    }
+
     public bool limpia()
     {
         if (objetoPuzle.limpia)

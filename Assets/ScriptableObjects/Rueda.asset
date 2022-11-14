@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: Rueda
   seConecta: 1
+  ruedaCorrecta: 1
+  limpia: 0

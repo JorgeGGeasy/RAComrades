@@ -30,7 +30,9 @@ public class Utilidades : MonoBehaviour
             float valorPlano = plano.transform.position.y - 5;
             if (objeto.transform.position.y < valorPlano)
             {
+                objeto.GetComponent<Rigidbody>().isKinematic = true;
                 objeto.transform.position = new Vector3(plano.transform.position.x, plano.transform.position.y + 2, plano.transform.position.z);
+                objeto.GetComponent<Rigidbody>().isKinematic = false;
             }
         }
     }

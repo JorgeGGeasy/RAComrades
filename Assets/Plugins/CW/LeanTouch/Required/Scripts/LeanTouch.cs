@@ -848,7 +848,6 @@ namespace Lean.Touch
 			{
 				if (m_hit.collider.gameObject.tag == "objetoMovible")
 				{
-					Debug.Log("Golpeado perro");
 					GameObject objetoAgarrado = m_hit.collider.gameObject;
 
 					foreach (GameObject objeto in objetos)

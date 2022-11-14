@@ -7,5 +7,7 @@ public class objetoPuzle : ScriptableObject
 
     public bool seConecta;
 
+    public bool ruedaCorrecta;
+
     public bool limpia;
 }

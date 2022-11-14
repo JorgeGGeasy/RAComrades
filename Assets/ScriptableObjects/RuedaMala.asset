@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d99553175c3b93142b462eaa1941d26c, type: 3}
-  m_Name: Esponja
+  m_Name: RuedaMala
   m_EditorClassIdentifier: 
-  nombre: Esponja
-  seConecta: 0
-  limpia: 1
+  nombre: Rueda
+  seConecta: 1
+  ruedaCorrecta: 0
+  limpia: 0
