@@ -6,4 +6,6 @@ public class objetoPuzle : ScriptableObject
     public string nombre;
 
     public bool seConecta;
+
+    public bool limpia;
 }

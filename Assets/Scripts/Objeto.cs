@@ -26,6 +26,15 @@ public class Objeto : MonoBehaviour
         return false;
     }
 
+    public bool limpia()
+    {
+        if (objetoPuzle.limpia)
+        {
+            return true;
+        }
+        return false;
+    }
+
     public string recibirNombre()
     {
         return objetoPuzle.nombre;
