@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Colision : MonoBehaviour
+public class PuzleCoche : MonoBehaviour
 {
     private GameManager gameManager;
 

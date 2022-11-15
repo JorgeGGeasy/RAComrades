@@ -288,6 +288,25 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 459079824}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &459079828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459079822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 459079824}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: RVCom2
+  mDatasetName: Vuforia/RVComrades.xml
+  mCastedBehaviour: {fileID: 459079824}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &722054167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,11 +1195,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2140368073170599340, guid: 467462b4037390146bc5f8310b31e139, type: 3}
       propertyPath: stringAyuda
-      value: "Entiende el manual y explicale a tu compa\xF1ero como reparar el coche"
+      value: Lee el manual y explicale a tu camarada como reparar el coche
       objectReference: {fileID: 0}
     - target: {fileID: 2140368073170599342, guid: 467462b4037390146bc5f8310b31e139, type: 3}
       propertyPath: m_Name
       value: AyudaInicial
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140368073170599342, guid: 467462b4037390146bc5f8310b31e139, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2140368073170599343, guid: 467462b4037390146bc5f8310b31e139, type: 3}
       propertyPath: m_Pivot.x
@@ -1265,6 +1288,10 @@ PrefabInstance:
     - target: {fileID: 2140368073170599343, guid: 467462b4037390146bc5f8310b31e139, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2297357389346497994, guid: 467462b4037390146bc5f8310b31e139, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 467462b4037390146bc5f8310b31e139, type: 3}
