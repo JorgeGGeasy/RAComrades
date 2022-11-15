@@ -18,9 +18,15 @@ public class PistaPuzle : MonoBehaviour
     [SerializeField]
     private float tiempoPista;
 
+    [SerializeField]
+    private AyudaInicial ayudaInicial;
+   
+
     // Start is called before the first frame update
     void Start()
     {
+
+        ayudaInicial.IniciarScriptAyudaInicial();
         gameManager = GameManager.Instance;
         corutinaPista = StartCoroutine(ActivarPista());
     }
@@ -80,4 +86,6 @@ public class PistaPuzle : MonoBehaviour
         yield return new WaitForSeconds(tiempoPista);
         botonPista.SetActive(true);
     }
+
+    
 }
