@@ -834,9 +834,9 @@ namespace Lean.Touch
 
 		public static void UnObjeto(Vector2 screenPosition)
 		{
-			GameObject elEsElChainSawMan = GameObject.FindGameObjectWithTag("utilidades");
-			Utilidades yoSoyElChainSaw = elEsElChainSawMan.GetComponent<Utilidades>();
-			List<GameObject> objetos = yoSoyElChainSaw.dameObjetos();
+			GameObject manager = GameObject.FindGameObjectWithTag("utilidades");
+			Utilidades util = manager.GetComponent<Utilidades>();
+			List<GameObject> objetos = util.dameObjetos();
 
 			foreach (GameObject objeto in objetos)
 			{
@@ -849,7 +849,6 @@ namespace Lean.Touch
 				if (m_hit.collider.gameObject.tag == "objetoMovible")
 				{
 					GameObject objetoAgarrado = m_hit.collider.gameObject;
-
 					foreach (GameObject objeto in objetos)
 					{
 						if (objeto != objetoAgarrado)
@@ -869,10 +868,14 @@ namespace Lean.Touch
 							}
 
 						}
-					}
+					}	
 				}
 				else
 				{
+					if(m_hit.collider.gameObject.tag == "radio")
+                    {
+						util.radioPulsada(m_hit.collider.gameObject);
+					}
 					Debug.Log("No agarro nada");
 				}
 			}

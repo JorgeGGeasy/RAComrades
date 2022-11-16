@@ -8,6 +8,7 @@ public class Utilidades : MonoBehaviour
     public GameObject plano;
     public float valor;
     public int numero;
+
     public List<GameObject> dameObjetos()
     {
         return objetos;
@@ -35,5 +36,18 @@ public class Utilidades : MonoBehaviour
                 objeto.GetComponent<Rigidbody>().isKinematic = false;
             }
         }
+    }
+
+    public void radioPulsada(GameObject radio)
+    {
+        float canal = radio.GetComponent<Rigidbody>().mass;
+
+        canal = canal + 1;
+        if(canal == 4)
+        {
+            canal = 1;
+        }
+
+        radio.GetComponent<Rigidbody>().mass = canal;
     }
 }
