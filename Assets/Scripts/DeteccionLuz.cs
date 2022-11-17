@@ -28,6 +28,10 @@ public class DeteccionLuz : MonoBehaviour
     [Range(0.0f, 1.0f)]
     public float umbralDeteccionLuz;
 
+    [SerializeField]
+    private bool isMinijuegoLuz = false;
+    private GameManager gameManager;
+
     #endregion // PRIVATE_MEMBERS
 
     #region MONOBEHAVIOUR_METHODS
@@ -40,6 +44,8 @@ public class DeteccionLuz : MonoBehaviour
         VuforiaApplication.Instance.OnVuforiaStarted += RegisterFormat;
         VuforiaApplication.Instance.OnVuforiaPaused += OnPause;
         VuforiaBehaviour.Instance.World.OnStateUpdated += OnVuforiaUpdated;
+
+        gameManager = GameManager.Instance;
     }
 
 
@@ -72,7 +78,13 @@ public class DeteccionLuz : MonoBehaviour
                 image.CopyBufferToTexture(texture);
                 texture.Apply();
                 if(luzCoche !=null){
-                    configurarLucesSegunLuzAmbiente(isTexturaConLuz(texture));
+                    bool hayLuz = isTexturaConLuz(texture);
+                    
+                    if(isMinijuegoLuz){
+                        configurarLucesSegunLuzAmbiente(!gameManager.ResolverLuces(hayLuz));
+                    }else{
+                        configurarLucesSegunLuzAmbiente(hayLuz);
+                    }
                      
                 }
             }else{

@@ -20,12 +20,21 @@ public class PuzleBaterias : MonoBehaviour
     [SerializeField]
     private Vector3 posicionBateria2;
     [SerializeField]
+    private Vector3 escalaPequenya, escalaGrande;
+    [SerializeField]
     private float expForce, radius;
-
+    [SerializeField]
+    private ParticleSystem explosion;
+    private AudioClipManager audioClipManager;
 
     [SerializeField]
     private GameObject[] baterias;
 
+
+    private void Awake()
+    {
+        audioClipManager = FindObjectOfType<AudioClipManager>();
+    }
 
     /// return -> 0 -> true, 1-> false, 2 -> estado intermedio
     private int comprobarResultado(){
@@ -72,13 +81,13 @@ public class PuzleBaterias : MonoBehaviour
                     case 0:
                         colocarBateria(other.gameObject, posicionBateria1);
                         Debug.Log("BATERIA - Se pone bateria 1");
-                        colorb1 = other.gameObject.GetComponent<Renderer>().material.GetColor("_Color");
+                        colorb1 = other.gameObject.transform.Find("bateria_material").gameObject.GetComponent<Renderer>().material.GetColor("_Color");
                         contBaterias++;
                         break;
                     case 1:
                         colocarBateria(other.gameObject, posicionBateria2);
                         Debug.Log("BATERIA - Se pone bateria 2");
-                        colorb2 = other.gameObject.GetComponent<Renderer>().material.GetColor("_Color");
+                        colorb2 = other.gameObject.transform.Find("bateria_material").gameObject.GetComponent<Renderer>().material.GetColor("_Color");
                         contBaterias++;
                         break;
                     default:
@@ -125,8 +134,11 @@ public class PuzleBaterias : MonoBehaviour
                 rigg.isKinematic = false;
                 rigg.useGravity = true;
                 rigg.AddExplosionForce(expForce, transform.position, radius);
+                audioClipManager.SeleccionarAudio(1, 0.1f);
+                explosion.Play();
                 
                 rigg.gameObject.tag = "objetoMovible";
+                rigg.gameObject.transform.localScale = escalaGrande;
             }
         }
 
@@ -137,10 +149,13 @@ public class PuzleBaterias : MonoBehaviour
 
     private void colocarBateria(GameObject bateria, Vector3 posicion){
         bateria.tag = "conectado";
+        audioClipManager.SeleccionarAudio(0, 0.5f);
         bateria.GetComponent<Rigidbody>().useGravity = false;
         bateria.GetComponent<Rigidbody>().isKinematic = true;
         bateria.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         bateria.transform.position = posicion;
+        bateria.transform.eulerAngles = new Vector3(0,-90,0);
+        bateria.transform.localScale = escalaPequenya;
     }
 
     void Start()

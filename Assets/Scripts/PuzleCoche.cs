@@ -21,6 +21,15 @@ public class PuzleCoche : MonoBehaviour
 
     [SerializeField]
     private ParticleSystem explosion;
+    [SerializeField]
+    private GameObject techoGameObject;
+
+    [SerializeField]
+    private Vector3[] posicionesRuedas;
+    [SerializeField]
+    private Vector3 rotacionRueda;
+    [SerializeField]
+    private Vector3 escalaGrande, escalaPequenya;
 
     private AudioClipManager audioClipManager;
 
@@ -93,18 +102,27 @@ public class PuzleCoche : MonoBehaviour
                 switch (ruedasConectadas)
                 {
                     case 0:
-                        objeto.transform.position = transform.position;
-                        objeto.transform.position = new Vector3(objeto.transform.position.x, objeto.transform.position.y, 0.149f);
+                        objeto.transform.localPosition = posicionesRuedas[ruedasConectadas];
+                        objeto.transform.localScale = escalaPequenya;
+                        objeto.transform.eulerAngles = rotacionRueda;
                         objeto.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         break;
                     case 1:
-                        objeto.transform.position = transform.position;
-                        objeto.transform.position = new Vector3(-0.438f, objeto.transform.position.y, objeto.transform.position.z);
+                        objeto.transform.localPosition = posicionesRuedas[ruedasConectadas];
+                        objeto.transform.localScale = escalaPequenya;
+                        objeto.transform.eulerAngles = rotacionRueda;
                         objeto.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         break;
                     case 2:
-                        objeto.transform.position = transform.position;
-                        objeto.transform.position = new Vector3(objeto.transform.position.x, objeto.transform.position.y, -0.149f);
+                        objeto.transform.localPosition = posicionesRuedas[ruedasConectadas];
+                        objeto.transform.localScale = escalaPequenya;
+                        objeto.transform.eulerAngles = rotacionRueda;
+                        objeto.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                        break;
+                    case 3:
+                        objeto.transform.localPosition = posicionesRuedas[ruedasConectadas];
+                        objeto.transform.localScale = escalaPequenya;
+                        objeto.transform.eulerAngles = rotacionRueda;
                         objeto.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         break;
                     default:
@@ -146,6 +164,7 @@ public class PuzleCoche : MonoBehaviour
                 rigg.isKinematic = false;
                 rigg.useGravity = true;
                 rigg.GetComponent<Rigidbody>().constraints = 0;
+                rigg.gameObject.transform.localScale = escalaGrande;
                 rigg.AddExplosionForce(expForce, transform.position, radius);
                 rigg.gameObject.tag = "objetoMovible";
             }
@@ -154,7 +173,7 @@ public class PuzleCoche : MonoBehaviour
 
     public void cocheListo(){
 
-        if (ruedasConectadas >= 3)
+        if (ruedasConectadas >= 4)
         {
             rueda = true;
             gameManager.ResolverRuedas();
@@ -176,17 +195,17 @@ public class PuzleCoche : MonoBehaviour
         switch (contador)
         {
             case 3:
-                GetComponent<Renderer>().material = materialLimpio;
+                techoGameObject.GetComponent<Renderer>().material = materialLimpio;
                 audioClipManager.AudioLimpieza(false);
                 gameManager.ResolverLimpieza();
                 break;
             case 2:
-                GetComponent<Renderer>().material = materialMedioSucio;
+                techoGameObject.GetComponent<Renderer>().material = materialMedioSucio;
                 audioClipManager.AudioLimpieza(false);
                 audioClipManager.AudioLimpieza(true);
                 break;
             case 1:
-                GetComponent<Renderer>().material = materialSucio;
+                techoGameObject.GetComponent<Renderer>().material = materialSucio;
                 audioClipManager.AudioLimpieza(false);
                 audioClipManager.AudioLimpieza(true);
                 break;

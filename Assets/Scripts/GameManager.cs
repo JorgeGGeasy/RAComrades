@@ -30,8 +30,10 @@ public class GameManager : MonoBehaviour
 
     public void ResolverBaterias()
     {
-        baterias = true;
-        audioClipManager.SeleccionarAudio(2,0.5f);
+        if(!baterias){   
+            baterias = true;
+            audioClipManager.SeleccionarAudio(2,0.5f);
+        }
     }
 
     public void ResolverRuedas()
@@ -55,11 +57,18 @@ public class GameManager : MonoBehaviour
         audioClipManager.SeleccionarAudio(2, 0.5f);
     }
 
-    public void ResolverLuces()
+    // devuelve si se tienen o no que encenderse las luces
+    public bool ResolverLuces(bool hayLuz)
     {
-        luces = true;
-        ResolverPuzle();
-        audioClipManager.SeleccionarAudio(2, 0.5f);
+        if(baterias && hayLuz){
+            luces = true;
+            ResolverPuzle();
+            audioClipManager.SeleccionarAudio(2, 0.5f);
+            return true;
+        }else{
+            return false;
+        }
+        
     }
 
     public void ResolverPuzle()
