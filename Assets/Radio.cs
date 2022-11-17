@@ -54,7 +54,7 @@ public class Radio : MonoBehaviour
                     ondasMalas.Stop();
                     ondasBuenas.Play();
 
-                    audioClipManager.AudioRadio(2,0.5f);
+                    audioClipManager.AudioRadio(2,0.2f);
                     gameManager.ResolverRadio();
 
                     break;
@@ -73,7 +73,7 @@ public class Radio : MonoBehaviour
                     ondasMalas.Play();
                     ondasBuenas.Stop();
 
-                    audioClipManager.AudioRadio(0, 0.5f);
+                    audioClipManager.AudioRadio(0, 0.4f);
 
                     gameManager.radio = false;
 

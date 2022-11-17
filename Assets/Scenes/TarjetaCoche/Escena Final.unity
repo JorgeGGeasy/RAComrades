@@ -251,7 +251,7 @@ MonoBehaviour:
   audiosRadio:
   - {fileID: 8300000, guid: 639f91ce8c39ab64aac15f108489b358, type: 3}
   - {fileID: 8300000, guid: b35c1757a08fd5b4fb23cf96c60e0e7f, type: 3}
-  - {fileID: 8300000, guid: 5f59bb8248d35da44b1bcd2557f13557, type: 3}
+  - {fileID: 8300000, guid: ddf16a012e4180149889df31e0083a92, type: 3}
   - {fileID: 8300000, guid: d494b1676bd7bca478ff1b61c3991b52, type: 3}
   controlAudioRadio: {fileID: 223307281}
 --- !u!82 &223307278
@@ -6714,7 +6714,7 @@ MonoBehaviour:
   quieresPista: {fileID: 1318776638}
   pista: {fileID: 1757108101}
   pistaTexto: {fileID: 762259812}
-  tiempoPista: 5
+  tiempoPista: 60
   ayudaInicial: {fileID: 1017005471}
 --- !u!114 &1927535372
 MonoBehaviour:
