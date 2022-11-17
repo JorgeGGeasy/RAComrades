@@ -13,6 +13,12 @@ public class AudioClipManager : MonoBehaviour
     [SerializeField]
     private AudioSource limpiezaAudio;
 
+    [SerializeField]
+    private AudioClip[] audiosRadio;
+
+
+    public AudioSource controlAudioRadio;
+
     public void SeleccionarAudio(int indice, float volumen)
     {
         controlAudio.PlayOneShot(audios[indice], volumen);
@@ -29,4 +35,10 @@ public class AudioClipManager : MonoBehaviour
         }
         
     }
+
+    public void AudioRadio(int indice, float volumen)
+    {
+        controlAudioRadio.PlayOneShot(audiosRadio[indice], volumen);
+    }
+
 }

@@ -38,16 +38,23 @@ public class GameManager : MonoBehaviour
 
     public void ResolverRuedas()
     {
-        ruedas = true;
-        ResolverPuzle();
-        audioClipManager.SeleccionarAudio(2, 0.5f);
+        if (!ruedas)
+        {
+            ruedas = true;
+            ResolverPuzle();
+            audioClipManager.SeleccionarAudio(2, 0.5f);
+        }
+        
     }
 
     public void ResolverLimpieza()
     {
-        limpieza = true;
-        ResolverPuzle();
-        audioClipManager.SeleccionarAudio(2, 0.5f);
+        if (!limpieza)
+        {
+            limpieza = true;
+            ResolverPuzle();
+            audioClipManager.SeleccionarAudio(2, 0.5f);
+        }
     }
 
     public void ResolverRadio()
