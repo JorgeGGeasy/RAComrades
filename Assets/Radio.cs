@@ -35,7 +35,8 @@ public class Radio : MonoBehaviour
                 case 3:
                     // Canal 3
                     Debug.Log("Canal 3");
-                    botones[canal].GetComponent<Renderer>().material = coloresBotones[canal];
+                    botones[canal-1].GetComponent<Renderer>().material = coloresBotones[canal-1];
+                    botones[canal-1].GetComponent<Renderer>().material = coloresBotones[canal-1];
                     /*botones[canal].transform.localPosition = new Vector3((float) botones[canal].transform.localPosition.x,
                                                                         (float) botones[canal].transform.localPosition.y-0.139f,
                                                                         (float) botones[canal].transform.localPosition.z);*/
