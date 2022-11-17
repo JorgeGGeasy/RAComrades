@@ -3132,10 +3132,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 138707732, guid: 8a9f8cc5cfe3e3a489425e1aafe64f88, type: 3}
-    m_PressedSprite: {fileID: 138707732, guid: 8a9f8cc5cfe3e3a489425e1aafe64f88, type: 3}
-    m_SelectedSprite: {fileID: 138707732, guid: 8a9f8cc5cfe3e3a489425e1aafe64f88, type: 3}
-    m_DisabledSprite: {fileID: 138707732, guid: 8a9f8cc5cfe3e3a489425e1aafe64f88, type: 3}
+    m_HighlightedSprite: {fileID: -2126286047, guid: 90fb877b5a88ec94d8ed2117f19e536a, type: 3}
+    m_PressedSprite: {fileID: -1900121004, guid: 9870192f2a9238b40aa4042fa3353779, type: 3}
+    m_SelectedSprite: {fileID: -2126286047, guid: 90fb877b5a88ec94d8ed2117f19e536a, type: 3}
+    m_DisabledSprite: {fileID: -2126286047, guid: 90fb877b5a88ec94d8ed2117f19e536a, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -3149,7 +3149,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 973358692}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: IniciarParticulas
+        m_MethodName: IniciarReparar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3179,7 +3179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 138707732, guid: 8a9f8cc5cfe3e3a489425e1aafe64f88, type: 3}
+  m_Sprite: {fileID: -2126286047, guid: 90fb877b5a88ec94d8ed2117f19e536a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3848,7 +3848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2071619482
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3892,7 +3892,7 @@ MonoBehaviour:
   m_text: Reparar el coche
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 909be91930e418f4da718350886773a5, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -187262133990603852, guid: 909be91930e418f4da718350886773a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
