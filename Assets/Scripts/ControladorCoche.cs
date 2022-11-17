@@ -37,13 +37,13 @@ public class ControladorCoche : MonoBehaviour
     private Vector3 posicionInicial;
     private Quaternion rotacionInicial;
 
-    private float period;
+    public float antiRoll;
 
     public GameObject canvasTarjeta;
     // Start is called before the first frame update
     private void Start()
     {
-        period = 0f;
+
     }
 
     private void Awake()
@@ -82,7 +82,42 @@ public class ControladorCoche : MonoBehaviour
             rueda.modelo.transform.rotation = rotacion;
         }
     }
+    private void FixedUpdate()
+    {
+        WheelHit hit;
+        float travelLF = 1.0f;
+        float travelRF = 1.0f;
+        float travelLT = 1.0f;
+        float travelRT = 1.0f;
 
+        bool groundLF = ruedas[0].collider.GetGroundHit(out hit);
+        if(groundLF)
+            travelLF = (ruedas[0].collider.transform.InverseTransformPoint(hit.point).y - ruedas[0].collider.radius) / ruedas[0].collider.suspensionDistance;
+
+        bool groundRF = ruedas[4].collider.GetGroundHit(out hit);
+        if (groundRF)
+            travelRF = (ruedas[4].collider.transform.InverseTransformPoint(hit.point).y - ruedas[4].collider.radius) / ruedas[4].collider.suspensionDistance;
+
+        bool groundLT = ruedas[3].collider.GetGroundHit(out hit);
+        if (groundLF)
+            travelLF = (ruedas[3].collider.transform.InverseTransformPoint(hit.point).y - ruedas[3].collider.radius) / ruedas[3].collider.suspensionDistance;
+
+        bool groundRT = ruedas[7].collider.GetGroundHit(out hit);
+        if (groundRT)
+            travelRT = (ruedas[7].collider.transform.InverseTransformPoint(hit.point).y - ruedas[7].collider.radius) / ruedas[7].collider.suspensionDistance;
+
+        float fuerzaAntiRollF = (travelLF - travelRF) * antiRoll;
+        float fuerzaAntiRollT = (travelLT - travelRT) * antiRoll;
+
+        if (groundLF)
+            rb.AddForceAtPosition(ruedas[0].collider.transform.up * -fuerzaAntiRollF, ruedas[0].collider.transform.position);
+        if (groundRF)
+            rb.AddForceAtPosition(ruedas[4].collider.transform.up * -fuerzaAntiRollF, ruedas[4].collider.transform.position);
+        if (groundLT)
+            rb.AddForceAtPosition(ruedas[3].collider.transform.up * -fuerzaAntiRollT, ruedas[3].collider.transform.position);
+        if (groundRT)
+            rb.AddForceAtPosition(ruedas[7].collider.transform.up * -fuerzaAntiRollT, ruedas[7].collider.transform.position);
+    }
     private void LateUpdate()
     {
         foreach(Rueda rueda in ruedas)

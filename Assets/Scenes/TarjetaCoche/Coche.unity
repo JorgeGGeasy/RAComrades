@@ -1179,6 +1179,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 713402517}
     - target: {fileID: 1230200236459837301, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
+      propertyPath: antiRoll
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230200236459837301, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: canvasTarjeta
       value: 
       objectReference: {fileID: 76354873}
@@ -1492,11 +1496,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2443716744981639228, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0791
+      value: 0.099
       objectReference: {fileID: 0}
     - target: {fileID: 2443716744981639228, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.635
+      value: -0.589
       objectReference: {fileID: 0}
     - target: {fileID: 2443716744981639228, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: m_LocalRotation.w
