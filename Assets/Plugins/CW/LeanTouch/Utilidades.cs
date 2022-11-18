@@ -26,9 +26,17 @@ public class Utilidades : MonoBehaviour
 
     private void Update()
     {
+
+        if (plano.gameObject.GetComponent<BoxCollider>().enabled == false){
+            foreach(GameObject objeto in objetos)
+        {
+            objeto.GetComponent<Rigidbody>().isKinematic = true;
+        }
+        }
+
         foreach(GameObject objeto in objetos)
         {
-            float valorPlano = plano.transform.position.y - 5;
+            float valorPlano = plano.transform.position.y - 1;
             if (objeto.transform.position.y < valorPlano)
             {
                 objeto.GetComponent<Rigidbody>().isKinematic = true;

@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "9YHNW18A18000558",
+    "m_SelectedDeviceId": "860fc455",
     "m_SelectedPackage": {
-        "deviceId": "114a6171",
+        "deviceId": "860fc455",
         "name": "com.RVComrades.RAComrades",
-        "processId": 11621,
+        "processId": 6765,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,55 +11,31 @@
         {
             "deviceId": "860fc455",
             "name": "com.RVComrades.RAComrades",
-            "processId": 11862,
-            "exited": true
-        },
-        {
-            "deviceId": "860fc455",
-            "name": "com.RVComrades.RAComrades",
-            "processId": 16900,
-            "exited": true
-        },
-        {
-            "deviceId": "860fc455",
-            "name": "com.RVComrades.RAComrades",
-            "processId": 18207,
-            "exited": true
-        },
-        {
-            "deviceId": "860fc455",
-            "name": "com.RVComrades.RAComrades",
-            "processId": 18934,
-            "exited": true
-        },
-        {
-            "deviceId": "860fc455",
-            "name": "com.miui.home",
-            "processId": 19359,
-            "exited": false
-        },
-        {
-            "deviceId": "860fc455",
-            "name": "com.RVComrades.RAComrades",
-            "processId": 22670,
-            "exited": false
-        },
-        {
-            "deviceId": "860fc455",
-            "name": "com.RVComrades.RAComrades",
-            "processId": 23475,
-            "exited": false
-        },
-        {
-            "deviceId": "860fc455",
-            "name": "com.RVComrades.RAComrades",
-            "processId": 24320,
-            "exited": false
-        },
-        {
-            "deviceId": "860fc455",
-            "name": "com.RVComrades.RAComrades",
             "processId": 25283,
+            "exited": true
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 18058,
+            "exited": true
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 21037,
+            "exited": true
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 27808,
+            "exited": true
+        },
+        {
+            "deviceId": "860fc455",
+            "name": "com.RVComrades.RAComrades",
+            "processId": 6765,
             "exited": false
         },
         {

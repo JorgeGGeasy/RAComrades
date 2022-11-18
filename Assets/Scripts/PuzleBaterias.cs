@@ -153,7 +153,7 @@ public class PuzleBaterias : MonoBehaviour
         bateria.GetComponent<Rigidbody>().useGravity = false;
         bateria.GetComponent<Rigidbody>().isKinematic = true;
         bateria.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-        bateria.transform.position = posicion;
+        bateria.transform.localPosition = posicion;
         bateria.transform.eulerAngles = new Vector3(0,-90,0);
         bateria.transform.localScale = escalaPequenya;
     }

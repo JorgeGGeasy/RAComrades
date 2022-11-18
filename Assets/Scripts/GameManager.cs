@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance; // A static reference to the GameManager instance
 
+    [SerializeField]
+    private GameObject canvasCoche;
+
     void Awake()
     {
         audioClipManager = FindObjectOfType<AudioClipManager>();
@@ -67,10 +70,12 @@ public class GameManager : MonoBehaviour
     // devuelve si se tienen o no que encenderse las luces
     public bool ResolverLuces(bool hayLuz)
     {
-        if(baterias && hayLuz){
+        if(baterias && !hayLuz){
+            if(!luces){
+                audioClipManager.SeleccionarAudio(2, 0.5f);
+            }
             luces = true;
             ResolverPuzle();
-            audioClipManager.SeleccionarAudio(2, 0.5f);
             return true;
         }else{
             return false;
@@ -84,8 +89,13 @@ public class GameManager : MonoBehaviour
         {
             // PASADO
             Debug.Log("Puzle conseguido");
-            SceneManager.LoadScene("Coche", LoadSceneMode.Single);
+            canvasCoche.SetActive(true);
+            
         }
+    }
+
+    public void IrANivelCoche(){
+        SceneManager.LoadScene("Coche", LoadSceneMode.Single);
     }
 
 }

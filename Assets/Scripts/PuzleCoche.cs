@@ -104,25 +104,25 @@ public class PuzleCoche : MonoBehaviour
                     case 0:
                         objeto.transform.localPosition = posicionesRuedas[ruedasConectadas];
                         objeto.transform.localScale = escalaPequenya;
-                        objeto.transform.eulerAngles = rotacionRueda;
+                        objeto.transform.localEulerAngles = rotacionRueda;
                         objeto.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         break;
                     case 1:
                         objeto.transform.localPosition = posicionesRuedas[ruedasConectadas];
                         objeto.transform.localScale = escalaPequenya;
-                        objeto.transform.eulerAngles = rotacionRueda;
+                        objeto.transform.localEulerAngles = rotacionRueda;
                         objeto.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         break;
                     case 2:
                         objeto.transform.localPosition = posicionesRuedas[ruedasConectadas];
                         objeto.transform.localScale = escalaPequenya;
-                        objeto.transform.eulerAngles = rotacionRueda;
+                        objeto.transform.localEulerAngles = rotacionRueda;
                         objeto.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         break;
                     case 3:
                         objeto.transform.localPosition = posicionesRuedas[ruedasConectadas];
                         objeto.transform.localScale = escalaPequenya;
-                        objeto.transform.eulerAngles = rotacionRueda;
+                        objeto.transform.localEulerAngles = rotacionRueda;
                         objeto.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         break;
                     default:

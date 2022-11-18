@@ -79,13 +79,8 @@ public class DeteccionLuz : MonoBehaviour
                 texture.Apply();
                 if(luzCoche !=null){
                     bool hayLuz = isTexturaConLuz(texture);
+                    configurarLucesSegunLuzAmbiente(hayLuz);
                     
-                    if(isMinijuegoLuz){
-                        configurarLucesSegunLuzAmbiente(!gameManager.ResolverLuces(hayLuz));
-                    }else{
-                        configurarLucesSegunLuzAmbiente(hayLuz);
-                    }
-                     
                 }
             }else{
                 Debug.Log("No pilla imagen");
@@ -96,8 +91,15 @@ public class DeteccionLuz : MonoBehaviour
 
     
     void configurarLucesSegunLuzAmbiente(bool hayLuz){
-        luzCoche.SetActive(!hayLuz); 
+        // si esta el minijuego activo, encender las luces del coche si estan las baterias
+        if(isMinijuegoLuz){
+             luzCoche.SetActive(gameManager.ResolverLuces(hayLuz)); 
+        }else{  
+            luzCoche.SetActive(!hayLuz); 
+        }
+
         solEscena.SetActive(hayLuz); 
+        
     }
 
     ///

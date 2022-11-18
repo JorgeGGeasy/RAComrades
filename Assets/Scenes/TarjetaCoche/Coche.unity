@@ -1187,8 +1187,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 76354873}
     - target: {fileID: 1230200236459837301, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
+      propertyPath: sensibilidadGiro
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230200236459837301, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: aceleracionMaxima
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1249346776498242913, guid: 27b6f52523f868e4c8e63143f7a12d0e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5022,6 +5026,7 @@ MonoBehaviour:
   luzCoche: {fileID: 671323159}
   solEscena: {fileID: 1453036979}
   umbralDeteccionLuz: 0.5
+  isMinijuegoLuz: 0
 --- !u!64 &2092359196
 MeshCollider:
   m_ObjectHideFlags: 0
