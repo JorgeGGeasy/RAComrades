@@ -3465,7 +3465,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 541c67ab33f890445a75dc27dd11c681, type: 2}
+  - {fileID: 2100000, guid: da6aa1b64f1e7574baeda832754ea52e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4222,6 +4222,7 @@ MonoBehaviour:
   materialSucio: {fileID: 2100000, guid: c64c75dab03223246b5939abe235667c, type: 2}
   materialMedioSucio: {fileID: 2100000, guid: b5d3e42fd60170341bc4a6557dbdd70d, type: 2}
   materialLimpio: {fileID: 2100000, guid: 408da64ca23da4e4f8bc4c8eeacccda7, type: 2}
+  ruedasConectadas: 0
   expForce: 300
   radius: 1
   explosion: {fileID: 1445638553}
